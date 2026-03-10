@@ -1,0 +1,20 @@
+.hero{min-height:100vh;display:flex;align-items:center;padding:130px 60px 60px;position:relative;overflow:hidden}
+.hero__orb{position:absolute;border-radius:50%;filter:blur(130px);pointer-events:none}
+.hero__orb--1{width:600px;height:600px;background:radial-gradient(circle,rgba(0,212,255,0.13),transparent 70%);top:-100px;right:-100px;animation:orbPulse 7s ease-in-out infinite alternate}
+.hero__orb--2{width:380px;height:380px;background:radial-gradient(circle,rgba(0,255,157,0.09),transparent 70%);bottom:60px;left:200px;animation:orbPulse 9s ease-in-out infinite alternate-reverse}
+@keyframes orbPulse{from{transform:scale(1);opacity:.6}to{transform:scale(1.12);opacity:1}}
+.hero__content{max-width:680px}
+.hero__eyebrow{font-family:var(--font-mono);font-size:11px;color:var(--accent2);letter-spacing:4px;text-transform:uppercase;margin-bottom:22px;display:flex;align-items:center;gap:12px}
+.hero__eyebrow::before{content:"";display:inline-block;width:38px;height:1px;background:var(--accent2)}
+.hero__name{font-size:clamp(52px,7.5vw,96px);font-weight:800;line-height:1;letter-spacing:-2px;margin-bottom:18px}
+.hero__name-first{color:var(--text)}
+.hero__name-last{color:transparent;-webkit-text-stroke:1.5px var(--accent);display:block}
+.hero__subtitle{font-size:17px;color:var(--muted);font-family:var(--font-mono);margin-bottom:28px;min-height:26px}
+.hero__subtitle-hi{color:var(--accent)}
+.hero__desc{font-size:16px;line-height:1.85;color:var(--muted);max-width:580px;margin-bottom:52px}
+.hero__btns{display:flex;gap:18px;flex-wrap:wrap}
+.hero__stats{position:absolute;right:60px;bottom:80px;display:flex;flex-direction:column;gap:28px}
+.hero__stat{text-align:right;border-right:2px solid var(--accent);padding-right:18px;display:flex;flex-direction:column}
+.hero__stat-num{font-size:34px;font-weight:800;color:var(--accent);line-height:1}
+.hero__stat-lbl{font-family:var(--font-mono);font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-top:4px}
+@media(max-width:768px){.hero{padding:110px 24px 60px}.hero__stats{display:none}}

@@ -1,0 +1,15 @@
+.projects-page{padding:130px 60px 0;min-height:100vh}
+.projects-page__header{margin-bottom:52px}
+.projects-page__eyebrow{font-family:var(--font-mono);font-size:11px;color:var(--accent2);letter-spacing:4px;text-transform:uppercase;display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.projects-page__eyebrow::before{content:"";display:inline-block;width:36px;height:1px;background:var(--accent2)}
+.projects-page__title{font-size:clamp(36px,5vw,62px);font-weight:800;letter-spacing:-1.5px;line-height:1.05;margin-bottom:18px}
+.projects-page__title span{color:transparent;-webkit-text-stroke:1.5px var(--accent)}
+.projects-page__desc{font-size:15px;color:var(--muted);max-width:560px;line-height:1.8}
+.projects-page__desc strong{color:var(--accent)}
+.projects-page__filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:44px}
+.projects-page__ftab{padding:7px 18px;background:transparent;border:1px solid var(--border);font-family:var(--font-mono);font-size:11px;color:var(--muted);letter-spacing:1px;cursor:pointer;transition:all 0.25s;text-transform:uppercase}
+.projects-page__ftab:hover{border-color:var(--accent);color:var(--accent)}
+.projects-page__ftab--active{background:var(--accent);color:var(--bg);border-color:var(--accent);font-weight:700}
+.projects-page__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:80px}
+@media(max-width:900px){.projects-page__grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.projects-page{padding:110px 24px 0}.projects-page__grid{grid-template-columns:1fr}}

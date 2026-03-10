@@ -1,0 +1,10 @@
+.timeline{position:relative;padding-left:42px}
+.timeline::before{content:"";position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--accent),transparent)}
+.timeline__item{position:relative;margin-bottom:56px}
+.timeline__item::before{content:"";position:absolute;left:-48px;top:6px;width:12px;height:12px;background:var(--accent);border:2px solid var(--bg2);outline:2px solid var(--accent);clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%)}
+.timeline__date{font-family:var(--font-mono);font-size:11px;color:var(--accent2);letter-spacing:2px;margin-bottom:7px}
+.timeline__role{font-size:21px;font-weight:700;margin-bottom:4px}
+.timeline__company{font-size:13px;color:var(--accent);font-family:var(--font-mono);margin-bottom:14px}
+.timeline__bullets{list-style:none}
+.timeline__bullets li{padding:5px 0 5px 20px;color:var(--muted);font-size:14px;line-height:1.7;position:relative}
+.timeline__bullets li::before{content:"▸";position:absolute;left:0;color:var(--accent)}
