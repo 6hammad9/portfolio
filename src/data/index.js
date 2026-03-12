@@ -32,7 +32,7 @@ export const projects = [
     github:"https://github.com/6hammad9", color:"#c084fc", icon:"📝",
     gradient:"linear-gradient(135deg,rgba(192,132,252,0.18),rgba(192,132,252,0.04))" },
     { id:5, year:"2025", name:"Debate Agent",
-    images:["/images/Debate_agent_1.png","/images/Debate_agent_2.png","/images/Debate_agent_3.png"],
+    images:["/images/Debate_agent_1.png","/images/Debate_agent2.png","/images/Debate_agent_3.png"],
     tagline:"AI Debate Agent with Tool-Based Reasoning", category:"AI / ML",
     desc:"AI debate agent that can analyze a topic, gather information from the web, and generate structured arguments from multiple perspectives",
     bullets:["Topic-based debate generation","Integration of web search tools for factual grounding","Structured arguments and counterarguments","Agent-based workflow for reasoning and response generation","Ability to explore multiple perspectives on a topic","Dual AI engine: Gemini 2.5 API or local Llama 3.2 via Ollama"],
